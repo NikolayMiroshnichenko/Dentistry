@@ -1,0 +1,22 @@
+/* PRICE */
+.price-list {
+  width: 100%;
+  margin-bottom: 70px;
+}
+.price-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0 15px 0;
+  border-bottom: 1px dotted #464744;
+}
+.price-list__title {
+  font-size: 18px;
+  font-weight: 400;
+  color: #464744;
+}
+.price-list__price {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+}

@@ -1,0 +1,37 @@
+.employee-wrapper {
+  width: 100%;
+}
+.employee {
+  padding: 40px 0 80px 0;
+  position: relative;
+}
+.employee-content {
+  position: relative;
+  width: 58%;
+}
+.employee-content::before {
+  position: absolute;
+  content: "";
+  left: 100%;
+  top: -70px;
+  width: 300px;
+  height: 260px;
+  background-image: url(../img/employee/employee-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: -1;
+}
+.employee-content__title h2 {
+  font-weight: 700;
+  font-style: normal;
+  color: #464744;
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 0 0 30px 0;
+}
+.employee-content__text p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #6b6c68;
+}

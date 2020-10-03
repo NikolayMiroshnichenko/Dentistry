@@ -1,0 +1,36 @@
+.parallax-wrapper {
+  width: 100%;
+  background-image: url(../img/parallax/parallax.jpg);
+  background-size: cover;
+  background-position: 50%;
+  background-attachment: fixed;
+  margin-bottom: 70px;
+}
+.parallax {
+  position: relative;
+  padding: 120px 330px 120px 0;
+  box-sizing: border-box;
+}
+.parallax-title {
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 700;
+  margin: 0 0 28px 0;
+}
+.parallax-text {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+}
+.parallax-text__number {
+  font-weight: 700;
+  color: #16bcca;
+  font-style: normal;
+  font-size: 22px;
+  padding: 0 10px;
+}
+.parallax-btn {
+  width: 220px;
+  margin-left: 10px;
+}
