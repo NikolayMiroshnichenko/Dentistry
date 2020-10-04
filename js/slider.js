@@ -1,3 +1,7 @@
+const prev = document.querySelector('.slider-btn__prev');
+const next = document.querySelector('.slider-btn__next');
+
+
 const mySiema = new Siema({
     selector: '.js-siema',
     duration: 200,
@@ -13,5 +17,13 @@ const mySiema = new Siema({
     onChange: () => {},
 });
 
+const autoPlay = setInterval(() => mySiema.next(), 3000);
 
-setInterval(() => mySiema.next(), 2500);
+prev.addEventListener('click', () => {
+    clearInterval(autoPlay);
+    mySiema.prev()
+});
+next.addEventListener('click', () => {
+    clearInterval(autoPlay);
+    mySiema.next();
+});
