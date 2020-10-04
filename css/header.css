@@ -1,6 +1,7 @@
 .header-top {
   position: relative;
   width: 100%;
+  background-color: #474745;
 }
 .header-top::before {
   position: absolute;
@@ -15,33 +16,30 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 0;
+  padding: 4px 0;
 }
 .header-logo {
   display: block;
   width: 120px;
   height: 70px;
-  background-image: url(../img/logo.png);
+  background-image: url(../img/logo-white.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
+.header-right-wrapper {
+  display: flex;
+  align-items: center;
+}
 .header-number {
   display: block;
-  color: #16bcca;
-  font-weight: 700;
-  font-size: 24px;
-}
-.nav-wpapper {
-  background-color: #474745;
-  padding: 4px 0;
-}
-.nav {
-  display: flex;
-  justify-content: flex-end;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 18px;
 }
 .nav-btn {
   width: 200px;
+  margin-right: 40px;
 }
 .btn-item {
   position: relative;

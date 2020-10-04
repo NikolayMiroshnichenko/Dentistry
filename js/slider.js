@@ -13,6 +13,11 @@ const mySiema = new Siema({
     threshold: 20,
     loop: true,
     rtl: false,
+    perPage: {
+        100: 1,
+        760: 2,
+        992: 3 
+    },
     onInit: () => {},
     onChange: () => {},
 });
