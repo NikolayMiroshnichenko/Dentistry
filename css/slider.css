@@ -1,10 +1,7 @@
 .slider-wrapper {
     position: relative;
     width: 100%;
-}
-.slider {
-    display: flex;
-    flex-wrap: wrap;
+    margin-bottom: 70px;
 }
 .slider-item {
     position: relative;
@@ -12,15 +9,13 @@
     min-height: 210px;
     max-height: 210px;
     overflow: hidden;
-    object-fit: cover;
     transition: all 0.2s;
-    margin-bottom: 20px;
-    margin-right: 20px;
 }
 .slider-item__img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 210px;
+    object-fit: cover;
     transition: all 0.2s;
 }
 .slider-item__title {

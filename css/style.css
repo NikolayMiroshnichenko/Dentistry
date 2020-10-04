@@ -8,6 +8,7 @@
 @import "./parallax-wrapper.css";
 @import "./technology.css";
 @import "./slider.css";
+@import "./contacts.css";
 
 
 body {
@@ -26,14 +27,5 @@ ul {
 .container {
   width: 1170px;
   margin: 0 auto;
-}
-
-
-
-
-
-/* Delete */
-.height {
-  min-height: 400px;
 }
 
