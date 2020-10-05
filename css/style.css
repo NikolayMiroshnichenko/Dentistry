@@ -30,4 +30,20 @@ ul {
   width: 1170px;
   margin: 0 auto;
 }
+.maps-wrapper {
+  position: relative;
+}
+#maps {
+  width: 100%;
+  height: 450px;
+}
+.maps-wrapper::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(90deg, #16bcca 0, #185795);
+}
 
