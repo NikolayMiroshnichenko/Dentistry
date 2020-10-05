@@ -15,7 +15,7 @@
         </div>
         <div class="header-right-wrapper">
           <div class="nav-btn">
-            <a href="#" class="btn-item">Записаться</a>
+            <a href="#" class="btn-item js-open-modal">Записаться</a>
           </div>
           <div class="header-number__wrapper">
             <a href="tel:+380936933533" class="header-number"
@@ -39,7 +39,7 @@
           предоставляемых услуг.
         </p>
         <div class="main-btn">
-          <a href="#" class="btn-item">Получить консультацию</a>
+          <a href="#" class="btn-item js-open-modal">Получить консультацию</a>
         </div>
         <div class="main-img">
           <img src="img/main/men.png" alt="" />
@@ -183,7 +183,7 @@
       </div>
     </section>
     <section class="price container">
-      <p class="price-text">ЦЕНЫ ЭКСТРОДЕНТ</p>
+      <p class="price-text">ЦЕНЫ</p>
       <h2 class="price-title">СТОИМОСТЬ ЛЕЧЕНИЯ ЗУБОВ</h2>
       <ul class="price-list">
         <li>
@@ -221,11 +221,11 @@
         <div class="parallax-text">
           Телефон для записи:
           <a href="tel:+380660791453" class="parallax-text__number">
-            +3(80) 66-079-14-53
+            + 38 (066) 079-14-53
           </a>
           <span class="parallax-text__none"> или </span>
           <div class="parallax-btn">
-            <a href="#" class="btn-item">онлайн запись</a>
+            <a href="#" class="btn-item js-open-modal">онлайн запись</a>
           </div>
         </div>
       </div>
@@ -316,20 +316,6 @@
             <p class="slider-item__text">
               Собственная стерилизационная станция для 100% безопасного и
               качественного лечения
-            </p>
-            <div class="slider-item__overlay"></div>
-          </div>
-          <!-- four-slide -->
-          <div class="slider-item">
-            <img
-              src="img/slider/laser-technology.jpg"
-              class="slider-item__img"
-              alt=""
-            />
-            <h2 class="slider-item__title">Лазерные технологии</h2>
-            <p class="slider-item__text">
-              Современные бесконтактные методы решения проблем с зубами без боли
-              и повреждения здоровых тканей
             </p>
             <div class="slider-item__overlay"></div>
           </div>
@@ -487,7 +473,77 @@
       </div>
     </section>
 
+    <div class="overlay" data-close="close">
+      <div class="modal-container">
+        <div class="modal">
+          <div class="close-btn" data-close="close">
+            <svg
+              data-close="close"
+              version="1.1"
+              class="close-btn__icon"
+              viewBox="0 0 172 172"
+            >
+              <g
+                data-close="close"
+                fill="none"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal"
+              >
+                <path
+                  data-close="close"
+                  d="M0,172v-172h172v172z"
+                  fill="none"
+                ></path>
+                <g fill="#ffffff" data-close="close">
+                  <path
+                    data-close="close"
+                    d="M49.5575,44.72l-4.8375,4.8375l36.55,36.4425l-36.55,36.4425l4.8375,4.8375l36.6575,-36.4425l36.55,36.4425l4.8375,-4.8375l-36.55,-36.4425l36.55,-36.4425l-4.8375,-4.8375l-36.55,36.4425z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <h2 class="modal-title">
+            Чтобы записать на приём
+          </h2>
+          <p class="modal-text">Введите свои данные ниже</p>
+          <form id="" class="js-form">
+            <input
+              type="text"
+              class="input"
+              name="name"
+              id=""
+              placeholder="Имя"
+            />
+            <input
+              type="tel"
+              class="input"
+              name="email"
+              id=""
+              placeholder="Номер телефона"
+            />
+            <button type="submit" class="btn-submit">
+              <span class="btn-item">отправить</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <script src="js/siema.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/submit.js"></script>
   </body>
 </html>

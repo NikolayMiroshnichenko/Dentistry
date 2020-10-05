@@ -10,6 +10,8 @@
 @import "./slider.css";
 @import "./contacts.css";
 @import "./steps.css";
+@import "./modal.css";
+
 
 body {
   margin: 0;

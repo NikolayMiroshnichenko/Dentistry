@@ -15,8 +15,7 @@ const mySiema = new Siema({
     rtl: false,
     perPage: {
         100: 1,
-        760: 2,
-        992: 3 
+        760: 2
     },
     onInit: () => {},
     onChange: () => {},
