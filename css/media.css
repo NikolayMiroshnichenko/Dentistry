@@ -55,6 +55,68 @@
     .container {
         width: 740px;
     }
+    /* MENU */
+    .menu-open {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-image: url(../img/menu.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        cursor: pointer;
+    }
+    .header-right-wrapper {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        z-index: 999;
+        overflow: hidden;
+        transform: translateY(-112px);
+        padding: 30px 20px 80px 20px;
+        box-sizing: border-box;
+        transition: all 0.3s;
+    }
+    .header-right-wrapper.active {
+        height: 100vh;
+        transform: translateY(0);
+    }
+    .close-menu {
+        position: absolute;
+        display: block;
+        right: 20px;
+        top: 20px;
+        width: 30px;
+        height: 30px;
+        background-image: url(../img/close-menu.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        cursor: pointer;
+        z-index: 9999;
+    }
+    .header-number__wrapper {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .header-number {
+        color: #000;
+        font-size: 22px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .nav-btn {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
     .step-img,
     .main-img {
         display: none;
@@ -122,6 +184,21 @@
     .step-nested-list li {
         font-size: 18px;
     }
+    .step-services {
+        flex-direction: column;
+    }
+    .step-services li {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .step-services__icon {
+        min-width: 80px;
+        min-height: 80px;
+    }
+    .step-services__text {
+        font-size: 20px;
+    }
     .contacts-text {
         font-size: 24px;
     }
@@ -148,7 +225,6 @@
     br,
     .technology-block__img::before,
     .parallax-text__none,
-    .nav-btn,
     .employee-content::before {
         display: none;
     }
@@ -255,12 +331,17 @@
     .steps-wrapper {
         padding: 30px 0;
     }
+    .step-services__text,
     .step-list__text,
     .step-list li {
         font-size: 16px;
     }
     .step-nested-list {
         padding-left: 10px;
+    }
+    .step-services__icon {
+        min-width: 60px;
+        min-height: 60px;
     }
     .contacts-info__item {
         width: 100%;
