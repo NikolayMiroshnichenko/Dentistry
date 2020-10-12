@@ -84,7 +84,7 @@
         transition: all 0.3s;
     }
     .header-right-wrapper.active {
-        height: 100vh;
+        height: 100%;
         transform: translateY(0);
     }
     .close-menu {
