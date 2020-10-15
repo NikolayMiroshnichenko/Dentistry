@@ -28,7 +28,7 @@
   padding-right: 40px;
 }
 .step-list {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .step-list li {
   position: relative;
@@ -39,40 +39,40 @@
   color: #6b6c68;
 }
 .step-list li::before {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 9px;
-    width: 5px;
-    height: 5px;
-    background-color: #16bcca;
-    border-radius: 50%;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 9px;
+  width: 5px;
+  height: 5px;
+  background-color: #16bcca;
+  border-radius: 50%;
 }
 .step-list li span {
-   font-weight: 700;
+  font-weight: 700;
 }
 .step-list__text {
-    color: #464744;
-    line-height: 24px;
-    font-size: 18px;
-    font-weight: 700;
+  color: #464744;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 700;
 }
 .step-nested-list {
-    padding: 10px 10px 10px 40px;
+  padding: 10px 10px 10px 40px;
 }
 .step-nested-list li {
-    position: relative;
-    font-size: 16px;
+  position: relative;
+  font-size: 16px;
 }
 .step-nested-list li::before {
-    position: absolute;
-    content: "";
-    left: -6px;
-    top: 12px;
-    width: 10px;
-    height: 2px;
-    background-color: #16bcca;
-    border-radius: 0;
+  position: absolute;
+  content: "";
+  left: -6px;
+  top: 12px;
+  width: 10px;
+  height: 2px;
+  background-color: #16bcca;
+  border-radius: 0;
 }
 
 .step-img {
@@ -120,6 +120,6 @@
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
   margin: 0;
 }

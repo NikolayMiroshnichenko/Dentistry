@@ -1,6 +1,6 @@
+// slider-technology
 const prev = document.querySelector('.slider-btn__prev');
 const next = document.querySelector('.slider-btn__next');
-
 
 const mySiema = new Siema({
     selector: '.js-siema',
@@ -30,4 +30,30 @@ prev.addEventListener('click', () => {
 next.addEventListener('click', () => {
     clearInterval(autoPlay);
     mySiema.next();
+});
+
+// stories-slider
+const prevStories = document.querySelector('.stories-btn__prev');
+const nextStories = document.querySelector('.stories-btn__next');
+
+const storiesSlider = new Siema({
+    selector: '.js-stories-slider',
+    duration: 400,
+    easing: 'ease-out',
+    perPage: 1,
+    startIndex: 0,
+    draggable: true,
+    multipleDrag: true,
+    // threshold: 20,
+    loop: true,
+    rtl: false,
+    onInit: () => {},
+    onChange: () => {},
+});
+
+prevStories.addEventListener('click', () => {
+    storiesSlider.prev()
+});
+nextStories.addEventListener('click', () => {
+    storiesSlider.next();
 });

@@ -69,27 +69,37 @@
   display: flex;
   align-items: center;
 }
+.header-social li,
 .message-list li {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   margin-right: 10px;
 }
+.header-social li:last-child,
+.message-list li:last-child {
+  margin-right: 0;
+}
 .message-list__telegram {
   background-color: #0088cc;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
 }
 .message-list__viber {
   background-color: #8f5db7;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
 }
 .message-list__whatsapp {
-  background-color: #25D366;
+  background-color: #25d366;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
 }
+.header-social__link,
 .message-list__link {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
 }
+.header-social__svg,
 .message-list__svg {
   position: absolute;
   top: 50%;
@@ -102,8 +112,29 @@
 .message-list__svg-telegram {
   transform: translate(-60%, -50%);
 }
+.header-social {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin-left: 20px;
+  border-left: 1px solid #ffffff;
+}
+.header-social__fb {
+  background-color: #3d5087;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+.header-social__instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
 .close-menu,
 .menu-open {
   display: none;
 }
-
