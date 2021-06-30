@@ -70,6 +70,7 @@
     width: 100%;
     top: 50%;
     transform: translateY(-50%);
+    opacity: 0;
 }
 .slider-btn__prev,
 .slider-btn__next {
